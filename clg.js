@@ -1,0 +1,1 @@
+//adding the styling of the clg from js 
