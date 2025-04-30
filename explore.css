@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border box ;
+}
+body{
+    /* background-color: #3AAFA9; */
+    background-size: cover;
+    /* background-image: url("explorebg.jpg"); */
+}
+.explore-header{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.explore-logo{
+    height: 200px;
+    width: 200px;
+    background-image: url("explorelog.png");
+    background-size: cover;
+    border-radius: 10px;
+    transition: transform 300ms ease-out;
+}
+.explore-logo:hover{
+    transform: scale(1.2,1.2);
+    box-shadow: 2px 3px 7px black;
+    border-radius: 0px;
+}
+.steps{
+    margin-top:10px;
+    color: #18230F;
+    font-family: "Noto Sans Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+    font-size: 3.27rem;
+    text-align: center;
+}
+.rasing-thought{
+    height: 100px;
+    width: 100%;
+ 
+}
+.rasing-thought h1{
+    color: #001A6E;
+    font-size: 3rem;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      text-align: center;
+}
+.icon{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #6a00ff;
+}
+.icon i{
+    transition: transform 400ms;
+    font-size: 12rem;
+}
+.icon i:hover{
+    transform: scale(1.2,1.2);
+    
+    
+}
+#downarrow{
+    font-size: 15rem;
+    box-shadow: 2px 4px -20px black;
+}
+/* hero section started */
+.hero{
+    height:900px;
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.firstdiv{
+    height: 700px;
+    width: 500px;
+    margin: 10px;
+    background-image: url("firstdivbg.jpg");
+    background-size: cover;
+}
+.seconddiv{
+    height: 700px;
+    width: 500px;
+    background-color: black;
+    margin: 10px;
+}
+

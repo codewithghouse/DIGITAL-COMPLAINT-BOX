@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Complaint</title>
+    <link rel="stylesheet" href="electricity.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>"Electricity is like life—when it flows smoothly, everything shines; when it's gone, darkness takes over."</h1>
+    <h1>Use it wisely, conserve it daily. ⚡💡</h1>
+    <p>Register Your Complaint By Filling This Form</p>
+
+    <!-- Electricity Form -->
+    <div class="electricity-form">
+        <div class="container">
+            <h2>Electricity Complaint Form</h2>
+            <form id="complaintForm" action="/action.php">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="complaint-type">Complaint Type</label>
+                    <select id="complaint-type">
+                        <option>Power Outage</option>
+                        <option>Voltage Fluctuation</option>
+                        <option>Meter Issue</option>
+                        <option>Billing Issue</option>
+                        <option>Street Light Not Working</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" required></textarea>
+                </div>
+                <button type="submit" class="submitbtn">Submit Complaint</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="electricity.js"></script>
+</body>
+</html>

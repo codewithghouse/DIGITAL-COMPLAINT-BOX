@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #203A43;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    color: #E67E22;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+    text-shadow: 1px 1px 2px white;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* Form design */
+.electricity-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.container {
+    width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.complaint-list {
+    margin-top: 20px;
+}
+
+.complaint-item {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid #ddd;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.electricdiv{
+    height: auto;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    
+}
+.name{
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 4px;
+    margin: 1px;
+    transition: transform 400ms ease-in-out;
+    cursor: pointer;
+}
+
+.phonenumber{
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    /* padding-left: 2px; */
+    margin: 1px;
+    transition: transform 400ms ease-in-out;
+    cursor: pointer;
+}
+
+.complaint{
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    /* padding-left: 2px; */
+    margin: 1px;
+    transition: transform 400ms ease-in-out;
+    cursor: pointer;
+}
+
+
+.description{
+    font-family: "Carrois Gothic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    cursor: pointer;
+    padding: 2px;
+    border:2px solid black;
+    height: auto;
+    width: auto;
+    border-radius: 5px ;
+
+}
+.delbtn{
+    height: 40px;
+    width: 80px;
+    color: REd;
+    background-color: black;
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid black;
+}
