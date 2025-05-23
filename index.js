@@ -15,9 +15,17 @@ app.get("/",((req,res)=>{
   console.log("render the index.html")
 }))
 //government sector settng
-app.get("/government", (req, res) => {
-  res.render("governament.ejs");
+app.get("/government/:service", (req, res) => {
+  let {service}= req.params;
+  console.log("service giver successfully");
+  res.render("governament.ejs",{service});
 });
+//inside subsector setting
+app.get("/government/:service/:subservice",((req,res)=>{
+  let { subservice}= req.params;
+  res.render("water.ejs",{subservice});
+
+}))
 
 app.listen(port,(req,res)=>{
     console.log(`the server is listening in the port ${port}`);

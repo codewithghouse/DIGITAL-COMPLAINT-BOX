@@ -144,7 +144,7 @@ nav ul li a:hover{
 .herologo{
   height: 500px;
   width: 500px;
-  background-image: url("herologoocomplaint.avif");
+  background-image: url("/images/herologoocomplaint.avif");
   background-size: cover;
   border-radius: 50px;
 }
