@@ -8,6 +8,9 @@ app.set("views",path.join(__dirname,"views"));
 // static files setting
 
 app.use(express.static(path.join(__dirname,"public")));
+
+// database connecting
+let connectString: "localhost:1521/xe"
 // server making
 
 app.get("/",((req,res)=>{
@@ -23,10 +26,23 @@ app.get("/government/:service", (req, res) => {
 //inside subsector setting
 app.get("/government/:service/:subservice",((req,res)=>{
   let { subservice}= req.params;
-  res.render("water.ejs",{subservice});
+  if(subservice =="water"){
+    res.render("water.ejs",{subservice});
+  }else if(subservice=="electricity"){
+    res.render("electricity.ejs",{subservice});
+  } else{
+    res.send("the page you are finding is no available");
+  }
+  // res.render("water.ejs",{subservice});
+  // console.log("the water page is render ")
 
 }))
 
+
+
+
+
+//the server is listening in the port
 app.listen(port,(req,res)=>{
     console.log(`the server is listening in the port ${port}`);
 
