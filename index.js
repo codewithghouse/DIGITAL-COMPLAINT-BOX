@@ -9,8 +9,7 @@ app.set("views",path.join(__dirname,"views"));
 
 app.use(express.static(path.join(__dirname,"public")));
 
-// database connecting
-let connectString: "localhost:1521/xe"
+g
 // server making
 
 app.get("/",((req,res)=>{
