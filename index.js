@@ -9,7 +9,7 @@ app.set("views",path.join(__dirname,"views"));
 
 app.use(express.static(path.join(__dirname,"public")));
 
-g
+
 // server making
 
 app.get("/",((req,res)=>{
@@ -36,11 +36,6 @@ app.get("/government/:service/:subservice",((req,res)=>{
   // console.log("the water page is render ")
 
 }))
-
-
-
-
-
 //the server is listening in the port
 app.listen(port,(req,res)=>{
     console.log(`the server is listening in the port ${port}`);
